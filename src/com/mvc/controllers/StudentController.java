@@ -22,6 +22,7 @@ public class StudentController {
 	@RequestMapping(value = "/student/{id}", method = RequestMethod.GET)
 	public @ResponseBody Student getStudentInJSON(@PathVariable int id) {
 		System.out.println(id);
+		System.out.println("just for testing git commit");
 		Student student = studentService.getStudent(id);
 		return student;
 	}
